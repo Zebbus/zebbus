@@ -1,8 +1,11 @@
-body { background: #FAF9F6; color: #000000; font-family: Georgia, serif; }
+body { 
+    background: #FAF9F6; 
+    color: #000000; 
+    font-family: Georgia, serif; }
 
 .container {
-    width: 420px;
-
+    width: 100%;
+    max-width: 500px;
     margin: 0 auto;
     font-weight: 100;
   }

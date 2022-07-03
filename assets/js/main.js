@@ -3,7 +3,7 @@ window.addEventListener('load', function() {
 var font;
 
 function pickFont(){
-    fonts = ["'Amatic SC', cursive","'Bebas Neue', cursive","'Dorsa', sans-serif","'Six Caps', sans-serif", "'Stint Ultra Condensed', cursive", "'Teko', sans-serif","'Wire One', sans-serif"]
+    fonts = ["Georgia, serif","'Amatic SC', cursive","'Bebas Neue', cursive","'Dorsa', sans-serif","'Six Caps', sans-serif", "'Stint Ultra Condensed', cursive", "'Teko', sans-serif","'Wire One', sans-serif"]
     const random = Math.floor(Math.random() * fonts.length);
     return fonts[random];
 };
@@ -21,12 +21,12 @@ function changeFont(){
 
 function setAll(){
     font = pickFont();
+    console.log(font)
     for (let e of document.getElementsByClassName("logo")) { e.style.fontFamily = font; }
 };
 
 (function switchUpAll(){
     rand = Math.round(Math.random()*(5000-1000))+1000;
-    console.log(rand)
     setTimeout(function() {
         setAll();
         switchUpAll();  
@@ -35,7 +35,6 @@ function setAll(){
 
 (function switchUpFont(){
     rand = Math.round(Math.random()*(10000-1000))+1000;
-    console.log(rand)
     setTimeout(function() {
         changeFont();
         switchUpFont();  
