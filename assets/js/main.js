@@ -15,7 +15,8 @@ function pickTitle(){
 };
 
 function changeFont(){
-    document.getElementById(pickTitle()).style.fontFamily = pickFont();
+    font = pickFont();
+    document.getElementById(pickTitle()).style.fontFamily = font;
 };
 
 function setAll(){
@@ -23,19 +24,22 @@ function setAll(){
     for (let e of document.getElementsByClassName("logo")) { e.style.fontFamily = font; }
 };
 
-function blinkyBill(){
-    var blink = document.getElementById(pickTitle())
-    blink.style.opacity = '0';
-    setInterval(blink.style.opacity = '1', 1000)
-    setInterval(blink.style.opacity = '0', 2000)
-    setInterval(blink.style.opacity = '1', 3000)
+(function switchUpAll(){
+    rand = Math.round(Math.random()*(5000-1000))+1000;
+    console.log(rand)
+    setTimeout(function() {
+        setAll();
+        switchUpAll();  
+    }, rand);
+}());
 
-}
-allChanges = setInterval(setAll, 2000);
-
-fontChanges = setInterval(changeFont, 5000);
-
-
-
+(function switchUpFont(){
+    rand = Math.round(Math.random()*(10000-1000))+1000;
+    console.log(rand)
+    setTimeout(function() {
+        changeFont();
+        switchUpFont();  
+    }, rand);
+}());
 
   });
