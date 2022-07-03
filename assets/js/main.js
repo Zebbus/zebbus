@@ -16,6 +16,7 @@ function pickTitle(){
 
 function changeFont(){
     font = pickFont();
+    console.log(font)
     document.getElementById(pickTitle()).style.fontFamily = font;
 };
 
