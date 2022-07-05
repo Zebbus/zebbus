@@ -3,7 +3,7 @@ window.addEventListener('load', function() {
 var font;
 
 function pickFont(){
-    fonts = ['Aladin','Georgia','Amatic SC','Bebas Neue','Nanum Pen Script','Press Start 2P', 'Rubik Glitch', 'Stint Ultra Condensed', 'Teko', 'Wire One','VT323','Special Elite']
+    fonts = ['Aladin','Georgia','Amatic SC','Bebas Neue','Monoton','Press Start 2P', 'Rubik Glitch', 'Stint Ultra Condensed', 'Teko', 'Wire One','Special Elite']
     const random = Math.floor(Math.random() * fonts.length);
     return fonts[random];
 };

@@ -28,14 +28,14 @@
          url('../fonts/bebas-neue-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
-  /* nanum-pen-script-regular - latin */
+  /* monoton-regular - latin */
 @font-face {
-    font-family: 'Nanum Pen Script';
+    font-family: 'Monoton';
     font-style: normal;
     font-weight: 400;
     src: local(''),
-         url('../fonts/nanum-pen-script-v19-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/nanum-pen-script-v19-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('../fonts/monoton-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/monoton-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
   /* press-start-2p-regular - latin */
@@ -66,16 +66,6 @@
     src: local(''),
          url('../fonts/special-elite-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
          url('../fonts/special-elite-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-
-  /* vt323-regular - latin */
-@font-face {
-    font-family: 'VT323';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-         url('../fonts/vt323-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/vt323-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
 body { 
