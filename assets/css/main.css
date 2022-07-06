@@ -98,11 +98,13 @@ body {
 .nowshowing{
     border-bottom: 1px solid;
     padding-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 a, a:visited{
     color:#000000;
     border-top: 1px solid;
+    padding-top: 5px;
     text-decoration: none;
 }
 
