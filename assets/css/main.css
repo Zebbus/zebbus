@@ -68,6 +68,11 @@
          url('../fonts/special-elite-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
+html {
+    width: 100%;
+    max-width: 100%;
+} 
+
 body { 
     background: #FAF9F6; 
     color: #000000; 
@@ -76,7 +81,6 @@ body {
 }
 
 .container {
-    width: 100%;
     max-width: 450px;
     padding: 15px;
     margin: 0 auto;
