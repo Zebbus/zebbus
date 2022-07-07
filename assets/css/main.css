@@ -75,9 +75,9 @@ html {
 
 body { 
     background: #FAF9F6; 
-    color: #000000; 
+    color: #050609; 
     font-family: 'Courier New', Courier, monospace;
-    font-size: 15px; 
+    font-size: 16px; 
 }
 
 .container {
@@ -105,7 +105,7 @@ body {
 }
 
 a, a:visited{
-    color:#000000;
+    color:#050609;
     border-top: 1px solid;
     padding-top: 5px;
     text-decoration: none;
