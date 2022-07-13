@@ -1,9 +1,11 @@
 window.addEventListener('load', function() {
 
 var font;
+var site = document.getElementsByTagName('body')[0];
+var dark = document.getElementById('darkmode');
 
 function pickFont(){
-    fonts = ['Aladin','Georgia','Amatic SC','Bebas Neue','Monoton','Press Start 2P', 'Rubik Glitch', 'Stint Ultra Condensed', 'Teko', 'Wire One','Special Elite']
+    fonts = ['Aladin','Georgia','Amatic SC','Bebas Neue', 'Creepster','Limelight','Press Start 2P', 'Rubik Glitch', 'Special Elite']
     const random = Math.floor(Math.random() * fonts.length);
     return fonts[random];
 };
@@ -24,6 +26,22 @@ function setAll(){
     for (let e of document.getElementsByClassName("logo")) { e.style.fontFamily = font; }
 };
 
+function darkMode(){
+    console.log('why')
+    if(site.classList.contains('darkmode')){
+        site.classList.remove("darkmode");
+        dark.innerHTML = 'dark_mode'; 
+    }
+    else {
+        site.classList.add("darkmode");
+        dark.innerHTML = 'light_mode';
+    }
+};
+
+dark.onclick = function(){
+    darkMode();
+};
+
 (function switchUpAll(){
     rand = Math.round(Math.random()*(5000-1000))+1000;
     setTimeout(function() {
@@ -32,12 +50,5 @@ function setAll(){
     }, rand);
 }());
 
-(function switchUpFont(){
-    rand = Math.round(Math.random()*(10000-2000))+2000;
-    setTimeout(function() {
-        changeFont();
-        switchUpFont();  
-    }, rand);
-}());
 
   });

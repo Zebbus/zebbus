@@ -28,14 +28,24 @@
          url('../fonts/bebas-neue-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
-  /* monoton-regular - latin */
+  /* creepster-regular - latin */
 @font-face {
-    font-family: 'Monoton';
+    font-family: 'Creepster';
     font-style: normal;
     font-weight: 400;
     src: local(''),
-         url('../fonts/monoton-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/monoton-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('../fonts/creepster-v13-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/creepster-v13-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+/* limelight-regular - latin */
+@font-face {
+    font-family: 'Limelight';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/limelight-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/limelight-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
   /* press-start-2p-regular - latin */
@@ -68,6 +78,42 @@
          url('../fonts/special-elite-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
+  /* icons */
+  @font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/MaterialIcons-Regular.woff2') format('woff2'),
+         url('../fonts/MaterialIcons-Regular.woff') format('woff');
+ }
+
+ .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    vertical-align: middle;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
 html {
     width: 100%;
     max-width: 100%;
@@ -78,39 +124,54 @@ body {
     color: #050609; 
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px; 
+    transition: background 1s, color 1s;
+    margin: 0;
 }
 
 .container {
     max-width: 450px;
-    padding: 15px;
+    padding: 20px;
     margin: 0 auto;
     font-weight: 100;
   }
 
 .logo{
     font-size: 5em;
-    height: 65px;
-    line-height: 65px;
+    height: 70px;
+    line-height: 70px;
 }
 
-.nav{
+.line{
     border-top: 1px solid;
     margin-top: 10px;
-    padding-top: 5px;
-}
-
-.nowshowing{
-    border-bottom: 1px solid;
-    padding-bottom: 5px;
+    padding-top: 10px;
 }
 
 a, a:visited{
-    color:#050609;
-    border-top: 1px solid;
-    padding-top: 5px;
+    color:inherit;
     text-decoration: none;
 }
 
 a:hover,a:focus{
     font-weight: bold;
+}
+
+#darkmode{
+    float: right;
+}
+
+.darkmode{
+    background: #050609;
+    color: #FAF9F6;
+}
+
+.copyright{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    text-align: center;
+    font-size: 12px;
 }
