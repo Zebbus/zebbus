@@ -1,8 +1,13 @@
-window.addEventListener('load', function() {
-
 var font;
 var site = document.getElementsByTagName('body')[0];
 var dark = document.getElementById('darkmode');
+
+if(localStorage.darkmode === 'true'){
+    site.classList.add("darkmode");
+    dark.innerHTML = 'light_mode';
+};
+
+window.addEventListener('load', function() {
 
 function pickFont(){
     fonts = ['Aladin','Georgia','Amatic SC','Bebas Neue', 'Creepster','Limelight','Press Start 2P', 'Rubik Glitch', 'Special Elite']
@@ -29,12 +34,16 @@ function setAll(){
 function darkMode(){
     console.log('why')
     if(site.classList.contains('darkmode')){
+        site.style.transition = 'all 1s';
         site.classList.remove("darkmode");
-        dark.innerHTML = 'dark_mode'; 
+        dark.innerHTML = 'dark_mode';
+        localStorage.setItem("darkmode", false);     
     }
     else {
+        site.style.transition = 'all 1s';
         site.classList.add("darkmode");
         dark.innerHTML = 'light_mode';
+        localStorage.setItem("darkmode", true); 
     }
 };
 
