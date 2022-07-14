@@ -1,8 +1,9 @@
 var font;
 var site = document.getElementsByTagName('body')[0];
 var dark = document.getElementById('darkmode');
+var hour = new Date().getHours();
 
-if(localStorage.darkmode === 'true'){
+if(localStorage.darkmode === 'true'|| hour >= 22 || hour <= 7){
     site.classList.add("darkmode");
     dark.innerHTML = 'light_mode';
 };
