@@ -78,42 +78,6 @@
          url('../fonts/special-elite-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
-  /* icons */
-  @font-face {
-    font-family: 'Material Icons';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-         url('../fonts/MaterialIcons-Regular.woff2') format('woff2'),
-         url('../fonts/MaterialIcons-Regular.woff') format('woff');
- }
-
- .material-icons {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 18px;  /* Preferred icon size */
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-    vertical-align: middle;
-  
-    /* Support for all WebKit browsers. */
-    -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
-    text-rendering: optimizeLegibility;
-  
-    /* Support for Firefox. */
-    -moz-osx-font-smoothing: grayscale;
-  
-    /* Support for IE. */
-    font-feature-settings: 'liga';
-  }
-
 html {
     width: 100%;
     max-width: 100%;
@@ -146,16 +110,31 @@ body {
     padding-top: 10px;
 }
 
+.nav{
+    border-right: 1px solid;
+    padding-right: 5px;
+    margin-right: 5px;
+}
+
+.nav:nth-child(4) {
+    border: none;
+}
+
 a, a:visited{
     color:inherit;
     text-decoration: none;
 }
 
-a:hover,a:focus{
+a:hover,a:focus,.nav:hover,.nav:focus{
     font-weight: bold;
 }
 
-#darkmode{
+svg:hover{
+    transform: scale(1.1);
+    transition: all 1ms;
+}
+
+.lights{
     float: right;
 }
 
