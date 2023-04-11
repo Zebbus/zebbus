@@ -26,7 +26,7 @@ function show(hi){
 }
 
 function pickFont(){
-    fonts = ['Aladin','Amatic SC','Bebas Neue', 'Courier' ,'Creepster','Georgia','Limelight','Press Start 2P', 'Rubik Glitch', 'Special Elite']
+    fonts = ['Aladin','Amatic SC','Bebas Neue', 'Courier' ,'Creepster','Georgia','Limelight','Poppins', 'Rubik Glitch', 'Special Elite','Staatliches']
     const random = Math.floor(Math.random() * fonts.length);
     return fonts[random];
 };
