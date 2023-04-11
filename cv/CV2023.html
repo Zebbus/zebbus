@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <META NAME="robots" CONTENT="noindex">
+        <title>Zeb van de Ven</title>
+        <meta name="description" content="curriculum vitae 2023">
+    <link href='https://fonts.googleapis.com/css?family=Lora|Bebas Neue&display=swap' rel='stylesheet'>
+    <style>
+        
+        html {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    position: relative;
+}   
+        body{
+            margin: 0;
+            background-color: #F8F8FF;
+            font-size: 14px;
+            font-family: 'Lora';
+            font-weight: 300;
+            color:#303030;
+        }
+
+        a, a:visited, a:focus{
+            text-decoration: none;
+            border-bottom: 2px solid #303030;
+            white-space: nowrap;
+            color: #303030;
+        }
+
+        a:hover{
+            background-color: #FF3131;
+        }
+
+        .container{
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .block{
+            display: inline-block;
+            vertical-align: top;
+            padding-bottom: 20px;
+            text-align: left;
+        }
+
+        .logo{
+            padding-top: 20px;
+            display: inline-block;
+    max-width: 280px;
+    font-size: 216px;
+    line-height: 166px;
+    font-family: 'Bebas Neue';
+    text-align: left;
+        }
+
+        .title{
+            text-decoration: underline;
+            margin-bottom: 5px;
+        }
+
+        .text{
+            overflow: hidden;
+        }
+
+        .when{
+            text-transform: lowercase;
+        }
+
+        .what{
+            font-weight: bold;
+        }
+
+
+        .readmore{
+            text-decoration: overline;
+            font-style: italic;
+            cursor: pointer;
+            margin: 5px 0;
+        }
+
+        ul{
+            list-style: none;
+    padding: 0 0 0 20px;
+    margin: 0;
+        }
+
+        li{
+            margin-bottom: 7px;
+        }
+
+        .col{
+            width: 280px;
+            padding: 20px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .highlight{
+            color: #fff;
+    background: #FF3132;
+    padding: 10px;
+    margin-bottom: 20px;
+        }
+
+
+        .legal{
+            margin: 0 auto;
+            font-size: 12px;
+        }
+
+        .hidden {
+            max-height: 0;
+            transition: all 0.5s ease-in;
+		}
+
+      .expand{
+        max-height: 300px;
+    transition: all 0.5s ease-out;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="logo" onclick="document.getElementById('hook').scrollIntoView({behavior: 'smooth'});">
+            Zeb van de Ven
+        </div>
+<div id="hook" class="col">
+    <div class="block highlight">
+        <div class="title">in short:</div>
+        <div class="text">
+            Creative and social individual, who loves a challenge and acquiring new skills. Pretty good
+            with code and expert in all things Adobe. Fast thinker who will always look for more efficient
+            solutions. Both client side and agency side experience. Currently working as Technical Marketing Automation Specialist.</div>
+    </div>
+<div class="block">
+    <div class="title">skills:</div>
+    <div class="text">
+CRM (SMC/Selligent, Scrum (Product Owner, Scrum Master),
+Adobe Campaign Classic/Standard), Conversational
+Design & Development, FrontEnd Development, Email
+Marketing & Development, Adobe Creative Suite, GIT</div>
+</div>
+<div class="block">
+    <div class="title">languages:</div>
+    <div class="text">
+        Dutch native, English fluent, German and French
+        fair</div>
+</div>
+<div class="block">
+    <div class="title">interests:</div>
+    <div class="text">
+        Cooking, Film, Technology, Boxing/Running/Yoga</div>
+</div>
+<div class="block">
+    <div class="title">education:</div>
+    <div class="text">Professional Chef, level 3, 2022 - ROC Midden Nederland</div>
+    <div class="text">Professional Chef, level 2, 2021 - ROC Midden Nederland</div>
+        <div class="text">Bachelor’s Degree, Broadcast Journalism, 2009 - Fontys Hogeschool Tilburg</div>
+</div>
+</div>
+        <div class="col">
+<div class="block current">
+    <div class="title">professional experience:</div>
+    <div class="text">
+    <div class="when">JANUARY 2022 - present</div>
+    <div class="what">Technical Marketing Automation Specialist</div>
+    <div class="where">@ Sunweb Group Rotterdam</div>
+    <div class="readmore" onclick="expandDiv(1)">read more</div>
+      <div id="div1" class="hidden">
+Providing technical insides regarding the CRM strategy. Improving efficency by setting up automated workflows and building bases templates. Supporting marketeers in developing campaigns,
+flows and emails. Sunweb Group is one of the leading digital European travel groups, with numerous brands operating all over Europe.
+</div>
+</div>
+</div>
+<div class="block">
+    <div class="text">
+    <div class="when">FEBRUARY 2019 – JANUARY 2022</div>
+    <div class="what">Scrum Master/Campaign Engineer</div>
+    <div class="where">@ Merkle NL Rotterdam</div>
+    <div class="readmore" onclick="expandDiv(2)">read more</div>
+    <div id="div2" class="hidden">
+Coaching and facilitating the development team, while managing the backlog. Developing campaigns,
+flows and emails in Selligent and Adobe Campaign Classic/Standard for clients such as T-Mobile.
+Designing and developing voice apps for Google Assistant using Dialogflow, Actions on Google, Firebase
+and Node.js. Merkle NL is an full service agency focusing on people based marketing, providing insights,
+CRM technology/development and CX/UX design. Currently located in Amsterdam and Rotterdam.</div>
+</div>
+</div>
+<div class="block">
+    <div class="text">
+    <div class="when">APRIL 2016 – FEBRUARY 2019</div>
+    <div class="what">Creative Lead</div>
+    <div class="where">@ The Little Green Bag/Cowboysbag Rotterdam</div>
+    <div class="readmore" onclick="expandDiv(3)">read more</div>
+    <div id="div3" class="hidden">
+    Leading full cycle of Front-end Development & Art Direction. Responsible for the brand identity, overall
+    design and marketing. Producing photo shoots and lookbooks with a team of freelancers. Building and
+    maintaining the website.</div>
+    </div>
+</div>
+<div class="block">
+    <div class="text">
+    <div class="when">MARCH 2009 – FEBRUARY 2019</div>
+    <div class="what">Freelance Designer/Developer</div>
+    <div class="where">@ ZEBDESIGN Rotterdam</div>
+    <div class="readmore" onclick="expandDiv(4)">read more</div>
+    <div id="div4" class="hidden">
+    Freelance Design/Development work for various start-ups and SME’s in Retail, Apparel & Fashion, Health & Fitness.
+    Work ranging from UX design, digital design, FrontEnd development to art direction, graphic design and illustrations.</div>
+    </div>
+</div>
+<div class="block">
+    <div class="text">
+    <div class="when">MARCH 2009 – APRIL 2016</div>
+    <div class="what">Freelance Editor & Photographer</div>
+    <div class="where">@ Soest & van Krimpen Rotterdam</div>
+    <div class="readmore" onclick="expandDiv(4)">read more</div>
+    <div id="div4" class="hidden">
+    Freelance work for various large retailers - V&D, America Today, CoolCat, Hema, Sapph, Pauw, Miss Etam,
+    MS Mode, KPMG. Working on photography, art direction, packshots & overall creative production.
+    Van Soest & Van Krimpen is a production company specialised in webshop photography and commercial
+    productions.</div>
+    </div>
+</div>
+<div class="block">
+    <div class="text">
+    <div class="when">APRIL 2010 - APRIL 2012</div>
+    <div class="what">Co-founder / Creative</div>
+    <div class="where">@ Some Other Bean Rotterdam & Amsterdam</div>
+    <div class="readmore" onclick="expandDiv(5)">read more</div>
+    <div id="div5" class="hidden">
+    Fashion brand for custom-made sustainable T-shirts & polo shirts.</div>
+    </div>
+</div>
+
+</div>
+<div class="legal">© wholesome cinema club</div>
+</div>
+
+    <script>
+		function expandDiv(divNum) {
+            console.log(event.target)
+			var div = document.getElementById("div" + divNum);
+			if (div.className === "hidden") {
+				div.className = "expand";
+                event.target.innerHTML = "read less";
+			} else {
+				div.className = "hidden";
+                event.target.innerHTML = "read more";
+			}
+		}
+    </script>
+  </body>
+</html>
