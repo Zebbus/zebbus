@@ -26,13 +26,12 @@
 
         a, a:visited, a:focus{
             text-decoration: none;
-            border-bottom: 2px solid #303030;
             white-space: nowrap;
             color: #303030;
         }
 
         a:hover{
-            background-color: #FF3131;
+            border-bottom: 1px solid #FF3131;
         }
 
         .container{
@@ -116,13 +115,15 @@
 
         .hidden {
             max-height: 0;
-            transition: all 0.5s ease-in;
+            transition: all 0.5s ease-out;
 		}
 
       .expand{
         max-height: 300px;
     transition: all 0.5s ease-out;
       }
+
+      
 
     </style>
   </head>
@@ -241,12 +242,11 @@ CRM technology/development and CX/UX design. Currently located in Amsterdam and 
 </div>
 
 </div>
-<div class="legal">© wholesome cinema club</div>
+<div class="legal"><a href="https://www.wholesomecinema.club" target="_blank">© wholesome cinema club</a></div>
 </div>
 
     <script>
 		function expandDiv(divNum) {
-            console.log(event.target)
 			var div = document.getElementById("div" + divNum);
 			if (div.className === "hidden") {
 				div.className = "expand";
